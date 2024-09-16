@@ -27,7 +27,7 @@ function Editorr() {
   }, 500);
 
   const fetchCode = async () => {
-    const url = `http://localhost:3000/api/project/get${id}`;
+    const url = `https://code-editor-0cr9.onrender.com/api/project/get${id}`;
     const token = localStorage.getItem("token");
     try {
       const response = await axios.get(url, {
@@ -50,7 +50,7 @@ function Editorr() {
   };
   const updateProject = async (e) => {
     e.preventDefault();
-    const url = `http://localhost:3000/api/project/update/${id}`;
+    const url = `https://code-editor-0cr9.onrender.com/api/project/update/${id}`;
     const token = localStorage.getItem("token");
     try {
       const response = await axios.put(

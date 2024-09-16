@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
 function Login({setToken}) {
-  const url = "http://localhost:3000/api/auth";
+  const url = "https://code-editor-0cr9.onrender.com/api/auth";
   const navigate = useNavigate();
   const [state, setState] = useState("Sign Up");
 
